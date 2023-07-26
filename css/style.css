@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Minik-Bold";
+  src: url("../fonts/Minik-Bold.otf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.8rem;
+  background: url(../img/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.page-text p {
+  font-family: "Minik-Bold", arial, cursive;
+  font-size: 2.7rem;
+  margin: 2.4rem 0;
+}
+h3 {
+  font-family: "Minik-Bold", arial, cursive;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.col-5 {
+  -ms-flex-preferred-size: 35%;
+  flex-basis: 35%;
+}
+.col-7 {
+  -ms-flex-preferred-size: 65%;
+  flex-basis: 65%;
+}
+.page {
+  background: #fff;
+  padding: 7rem 4rem;
+  border: 1.5rem solid transparent;
+  border-image-source: url(../img/smow-star.png);
+  border-image-slice: 20 22;
+  border-image-repeat: round;
+  border-image-width: 30px;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 1px 1px 15px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 15px 4px rgba(0, 0, 0, 0.5);
+}
+.section-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.section-heading h2 {
+  background: #21253a;
+  color: #fff;
+  display: inline-block;
+  padding: 1rem 4.5rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%);
+  clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%);
+  margin: auto;
+  font-family: "Lilita One", cursive;
+  font-size: 2.8rem;
+}
+.list {
+  list-style: none;
+}
+.list li {
+  font-family: "Minik-Bold", arial, cursive;
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+}
+
+@media (max-width: 550px) {
+  .page {
+    padding: 5rem 2rem;
+  }
+  .section-heading h2 {
+    padding: 1rem 2.5rem;
+    font-size: 2.4rem;
+  }
+  .page-text p {
+    font-size: 2.5rem;
+  }
+}
