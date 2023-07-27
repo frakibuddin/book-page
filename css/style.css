@@ -1,9 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap");
-
-@font-face {
-  font-family: "Minik-Bold";
-  src: url("../fonts/Minik-Bold.otf");
-}
+@import url("https://db.onlinewebfonts.com/c/2dd509271764ff079832bac8db2c5ac1?family=Filmotype+Austin");
+@import url("https://db.onlinewebfonts.com/c/22965a163c28465589b12cbdc395d1d4?family=Minik-Bold");
 
 * {
   padding: 0;
@@ -58,16 +54,44 @@ h3 {
 }
 .page {
   background: #fff;
-  padding: 7rem 7rem;
-  border: 1.5rem solid transparent;
-  border-image-source: url(../img/Untitled-1e.png);
-  border-image-slice: 31 32;
-  border-image-repeat: round;
-  border-image-width: 60px;
+  padding: 9rem 15rem;
   margin: 2.5rem 2rem;
   -webkit-box-shadow: 1px 1px 15px 4px rgba(0, 0, 0, 0.5);
   box-shadow: 1px 1px 15px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
 }
+.border-imgs img {
+  position: absolute;
+  height: 100%;
+}
+.border-imgs .border-left {
+  top: 0;
+  left: 0;
+}
+.border-imgs .border-right {
+  top: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+.border-imgs .border-top {
+  height: auto;
+  width: 80%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+}
+.border-imgs .border-bottom {
+  height: 8rem;
+  width: 70%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* .border-imgs .border-right-bottom {
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+} */
 .section-heading {
   text-align: center;
   margin-bottom: 3rem;
@@ -81,7 +105,7 @@ h3 {
   /* -webkit-clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%);
   clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%); */
   margin: auto;
-  font-family: "Kanit", sans-serif;
+  font-family: "Filmotype Austin", sans-serif;
   font-size: 2.8rem;
   position: relative;
 }
@@ -109,6 +133,22 @@ h3 {
   line-height: 3.6rem;
 }
 
+@media (max-width: 900px) {
+  .border-imgs img {
+    width: 14rem;
+  }
+}
+@media (max-width: 768px) {
+  .page {
+    border: 0.4rem solid #21253a;
+  }
+  .border-imgs img {
+    display: none;
+  }
+  .page {
+    padding: 5rem 5rem;
+  }
+}
 @media (max-width: 550px) {
   .page {
     padding: 5rem 2.5rem;
